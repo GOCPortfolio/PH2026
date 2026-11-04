@@ -10,7 +10,7 @@ const CONFIG = {
   site: {
     // ⚠ CONFIRM: assumed GitHub Pages address for the repo GOCPortfolio/PH2026
     url: "https://gocportfolio.github.io/PH2026/",
-    ogImage: "https://gocportfolio.github.io/PH2026/assets/og-image-2.jpg"
+    ogImage: "https://gocportfolio.github.io/PH2026/assets/og-image-3.jpg"
   },
 
   /* ---- The couple ---- */
