@@ -71,7 +71,7 @@ const CONFIG = {
       address: "Azikiwe Road, Umu Obasi, Umuahia 440236, Abia State",
       time: "Immediately after the ceremony",      // ⚠ CONFIRM
       mapQuery: "GFGX+QFG, Azikiwe Rd, Umu Obasi, Umuahia 440236, Abia",   // Google plus code + address, so the pin lands exactly
-      mapsUrl: ""
+      mapsUrl: "https://maps.app.goo.gl/9q7rX7zVNAEZknar6"
     }
   ],
 
