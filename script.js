@@ -67,10 +67,10 @@ const CONFIG = {
     },
     {
       label: "The Reception",
-      name: "Margrat Hall",                        // ⚠ CONFIRM spelling (Margaret Hall?)
-      address: "Full address to be confirmed",     // ⚠ CONFIRM street address
+      name: "Margrat School Hall",
+      address: "Azikiwe Road, Umu Obasi, Umuahia 440236, Abia State",
       time: "Immediately after the ceremony",      // ⚠ CONFIRM
-      mapQuery: "Margrat Hall, Umuahia, Abia State, Nigeria", // ⚠ CONFIRM exact Google Maps text
+      mapQuery: "GFGX+QFG, Azikiwe Rd, Umu Obasi, Umuahia 440236, Abia",   // Google plus code + address, so the pin lands exactly
       mapsUrl: ""
     }
   ],
