@@ -274,6 +274,7 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
 /* ---------- Father of the Day ---------- */
 .father-lbl { font-size: 44px; line-height: 1.1; margin-bottom: 8px; }
 .father-names { font-family: var(--caps); letter-spacing: .12em; text-transform: uppercase; font-size: 21px; color: var(--royal-deep); }
+.father-role::before { content: "( "; } .father-role::after { content: " )"; }
 .father-role { font-style: italic; color: var(--muted); margin-top: 4px; }
 
 /* ---------- Story ---------- */

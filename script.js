@@ -94,7 +94,11 @@ const CONFIG = {
   },
 
   /* ---- Optional extras (leave empty to hide the section) ---- */
-  fatherOfTheDay: null,   // e.g. { names: "Chief A. B. Name", role: "Managing Director, Company" }
+  fatherOfTheDay: {       // special-guest section (label can be changed, e.g. "Father of the Day")
+    label: "Chief Host",
+    names: "Mrs Ebere Nkele Agu",
+    role: "Odiukonamba 1"
+  },
   vendors: [],            // e.g. [{ role: "Photography", name: "Studio Name" }]
 
   /* ---- Gifts ---- */
@@ -355,6 +359,8 @@ const CONFIG = {
     if (!sec) return;
     var f = C.fatherOfTheDay;
     if (!f) { sec.hidden = true; return; }
+    if (f.label) $("#fatherTitle").textContent = f.label;
+    $("#fatherTitle").textContent = f.label || "Father of the Day";
     $("#fatherNames").textContent = f.names;
     $("#fatherRole").textContent = f.role || "";
   }
