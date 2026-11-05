@@ -158,7 +158,10 @@ const CONFIG = {
     { id: "dress", q: "Dress code", a: "We would be delighted to see you dressed in the colours of the day.", swatches: true },
     { id: "parking", q: "Parking", a: "Parking details will be shared by our coordinator. Please call the number below if you need help on the day." },
     { id: "stay", q: "Accommodation", a: "If you are travelling and need a place to stay, please reach out to our coordinator and we will gladly point you in the right direction." },
-    { id: "contact", q: "Who do I contact?", contact: true }
+    { id: "contact", q: "Who do I contact?", contact: true },
+    { id: "credit", q: "Who created this beautiful wedding website?",
+      paras: ["This website was proudly designed by G.O.C | Brand Strategist × AI, where we create beautiful, personalized digital wedding experiences.", "Planning your wedding? Let's create yours too!"],
+      link: { text: "Chat with us on WhatsApp", href: "https://wa.me/2348027134537" } }
   ],
 
   /* ---- Footer & share ---- */
@@ -412,11 +415,13 @@ const CONFIG = {
       var item = el("div", "faq-item");
       var body = "";
       if (f.a) body += "<p>" + esc(f.a) + "</p>";
+      if (f.paras) body += f.paras.map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("");
+      if (f.link) body += '<p><a class="faq-link" target="_blank" rel="noopener" href="' + esc(f.link.href) + '">' + esc(f.link.text) + "</a></p>";
       if (f.swatches) body += '<ul class="swatches small">' + swatchHTML() + "</ul>";
       if (f.contact) {
         body += "<p>" + esc(C.contact.personName) + ": <a href=\"tel:" + esc(C.contact.callTel) + "\">" + esc(C.contact.callDisplay) + "</a></p>" +
           "<p>WhatsApp: <a target=\"_blank\" rel=\"noopener\" href=\"" + esc(waLink("Hello, I have a question about the wedding of " + C.couple.short + ".")) + "\">" + esc(C.contact.whatsappDisplay) + "</a></p>";
-      } else if (f.id !== "dress") {
+      } else if (f.id !== "dress" && !f.paras) {
         body += "<p><a href=\"tel:" + esc(C.contact.callTel) + "\">Call " + esc(C.contact.callDisplay) + "</a></p>";
       }
       item.innerHTML =
