@@ -149,8 +149,8 @@ const CONFIG = {
 
   /* ---- RSVP ---- */
   rsvp: {
-    endpoint: "https://script.google.com/macros/s/AKfycbw9ByKROe5k0iQuldlOGnML5xyPKYyzaZ3tpKkw_cQTfkSmGWQXEKqg2SbwXAcVztKXCQ/exec",   // Google Apps Script Web App URL
-    maxGuests: 10
+    endpoint: "https://script.google.com/macros/s/AKfycbyoXOrlDIWTGfJRSj9AnklWvElPyFgWvjtHlNoGIU01ap9aHr2tYhkJ5peTt6AYYM5d/exec",   // Google Apps Script Web App URL
+    maxGuests: 5
   },
 
   /* ---- FAQ ---- */
